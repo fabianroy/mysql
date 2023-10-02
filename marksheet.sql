@@ -12,11 +12,11 @@ GPA FLOAT NOT NULL
 INSERT INTO Students
 (ID, Name, GPA)
 VALUES
-(1, "Fabian Roy", 4.67);
-(2, "Mujtabir Nayeef", 5.0);
-(3, "Mahir Riju", 4.58);
-(4, "Nasif Fuad", 4.58);
-(5, "Aishorzo Hira", 5.0);
+(1, "Fabian Roy", 4.67),
+(2, "Mujtabir Nayeef", 5.0),
+(3, "Mahir Riju", 4.58),
+(4, "Nasif Fuad", 4.58),
+(5, "Aishorzo Hira", 5.0),
 (6, "Minhaz Aritro", 4.58);
 
 -- Method 2 (Short)
