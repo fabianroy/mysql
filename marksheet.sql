@@ -16,3 +16,5 @@ INSERT INTO Students VALUES (5, "Aishorzo Hira", 5.0);
 INSERT INTO Students VALUES (6, "Minhaz Aritro", 4.58);
 
 SELECT * FROM Students;
+SHOW DATABASES;
+SHOW TABLES;
