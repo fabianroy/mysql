@@ -1,3 +1,9 @@
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE students(
+ID INT PRIMARY KEY,
+Name VARCHAR(30),
 Roll INT NOT NULL,
 Grade VARCHAR(30),
 City VARCHAR(30)
