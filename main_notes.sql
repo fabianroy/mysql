@@ -1,4 +1,5 @@
 CREATE DATABASE college;
+CREATE DATABASE IF NOT EXISTS college;
 USE college;
 
 CREATE TABLE students(
