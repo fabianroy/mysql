@@ -16,7 +16,8 @@ VALUES
 (101, "Fabian", 775, "A", "Dhaka"),
 (102, "Nasif", 714, "A", "Dhaka"),
 (103, "Mahir", 756, "A+", "Dhaka"),
-(104, "Mujtabir", 780, "A-", "Dhaka");
+(104, "Mujtabir", 780, "A-", "Dhaka"),
+(105, "Keru", 785, "B", "Dhaka");
 
 SELECT Name, Grade FROM students;
 SELECT DISTINCT Grade FROM students;
@@ -33,7 +34,6 @@ SELECT * FROM students ORDER BY Name DESC;
 SELECT * FROM students;
 
 /* Aggregate Functions */
-
 SELECT MAX(Roll) FROM students;
 SELECT AVG(Roll) FROM students;
 SELECT MIN(Roll) FROM students;
@@ -41,5 +41,19 @@ SELECT COUNT(Roll) FROM students;
 SELECT SUM(Roll) FROM students;
 
 /* Group By Clause */
-
 SELECT Grade, COUNT(Roll) FROM students GROUP BY Grade;
+
+/* HAVING CLAUSE */
+SELECT City, COUNT(Name) FROM students GROUP BY City HAVING MAX(Roll) > 750;
+
+/* General Order */
+SELECT City FROM students WHERE Grade = "A" GROUP BY City HAVING MAX(Roll) > 700 ORDER BY City ASC;
+
+/* Table Related Queries */
+UPDATE students SET Grade = "A" WHERE Name = "Mahir";
+
+/* Delete Queries */
+DELETE FROM students WHERE Grade = "B";
+
+/* SAFE MODE ON / OFF */
+SET SQL_SAFE_UPDATES = 0;
